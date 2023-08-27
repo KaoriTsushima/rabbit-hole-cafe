@@ -16,8 +16,8 @@ function TagDetails() {
     <div className="d-flex flex-wrap gap-4 m-4 justify-content-center">
       {
         Object.entries(TAGS).map(([key, tag]) => (
-          <div className="d-flex align-items-center">
-            <Tag tag={tag} showDetails key={key}/>
+          <div className="d-flex align-items-center" key={key}>
+            <Tag tag={tag} showDetails/>
             <div>{tag.TEXT}</div>
           </div>
         ))
@@ -55,7 +55,7 @@ export default function Menu() {
             <Nav.Link eventKey="Snacks/Dessert">Snack/Dessert</Nav.Link>
           </Nav.Item>
         </Nav>
-      <TagDetails/>
+        <TagDetails/>
         <Tab.Content>
           <Tab.Pane eventKey="Coffee">
             <h3>Coffee</h3>
