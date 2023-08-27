@@ -1,6 +1,6 @@
 import React from "react";
 import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
+import { Nav } from "react-bootstrap";
 import './Menu.scss';
 
 const TAGS = {
@@ -13,7 +13,7 @@ const TAGS = {
 
 function TagDetails() {
   return (
-    <div className="d-flex flex-wrap gap-5 mt-4 justify-content-center">
+    <div className="d-flex flex-wrap gap-4 m-4 justify-content-center">
       {
         Object.entries(TAGS).map(([key, tag]) => (
           <div className="d-flex align-items-center">
@@ -38,29 +38,41 @@ export default function Menu() {
   return (
     <div className="m-5">
     <h1>Menu</h1>
-    <TagDetails/>
-    <Tabs
-    defaultActiveKey="Coffee"
-    id="menu-tabs"
-    className="m-5"
-    justify
-    variant="pills"
-    style={{ fontSize: '1.2rem'}}
-  >
-    <Tab eventKey="Coffee" title="Coffee">
-      <h3>Coffee</h3>
-      <div className="d-flex align-items-center">Espresso <Tag tag={TAGS.DECAF} /></div>
-    </Tab>
-    <Tab eventKey="Tea" title="Tea">
-      <h3>Tea</h3>
-    </Tab>
-    <Tab eventKey="Hot Chocolate" title="Hot Chocolate">
-    <h3>Hot Chocolate</h3>
-    </Tab>
-    <Tab eventKey="Snacks/Dessert" title="Snacks/Dessert">
-      <h3>Snacks/Dessert</h3>
-    </Tab>
-  </Tabs>
-  </div>
+
+    <Tab.Container defaultActiveKey="Coffee">
+      <div className="d-flex flex-column mx-4 mt-5 gap-5">
+        <Nav variant="pills" fill>
+          <Nav.Item>
+            <Nav.Link eventKey="Coffee">Coffee</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="Tea">Tea</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="Hot Chocolate">Hot Chocolate</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="Snacks/Dessert">Snack/Dessert</Nav.Link>
+          </Nav.Item>
+        </Nav>
+      <TagDetails/>
+        <Tab.Content>
+          <Tab.Pane eventKey="Coffee">
+            <h3>Coffee</h3>
+            <div className="d-flex align-items-center">Espresso <Tag tag={TAGS.DECAF} /></div>
+          </Tab.Pane>
+          <Tab.Pane eventKey="Tea">
+            <h3>Tea</h3>
+          </Tab.Pane>
+          <Tab.Pane eventKey="Hot Chocolate">
+            <h3>Hot Chocolate</h3>
+          </Tab.Pane>
+          <Tab.Pane eventKey="Snacks/Dessert">
+            <h3>Snacks/Dessert</h3>
+          </Tab.Pane>
+        </Tab.Content>
+      </div>
+    </Tab.Container>
+</div>
   )
 }
