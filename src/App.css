@@ -1,6 +1,9 @@
 .App {
   text-align: center;
-  font-family: Algerian;
+  font-family: "Lobster", cursive;
+  font-family: "PT Mono", monospace;
+  font-family: "Roboto Slab", serif;
+  font-family: "Rock Salt", cursive;
 }
 
 .App-logo {
@@ -15,13 +18,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/094/833/original/rabbit.jpg.jpg?1693131073");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 200px 0;
   color: white;
 }
 
