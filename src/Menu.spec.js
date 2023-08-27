@@ -8,6 +8,7 @@ describe('Testing Menu', () => {
     test('defaults to coffee tab', () => {
         render(<Menu/>)
         expect(screen.getByRole('tab', { name: /Coffee/u })).toHaveAttribute('aria-selected', 'true');
+        expect(screen.getByRole('heading', { name: /Coffee/u })).toBeVisible();
     });
 
     test('can switch to another tab', async () => {
