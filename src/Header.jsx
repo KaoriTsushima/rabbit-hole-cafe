@@ -8,7 +8,7 @@ export default function Header() {
     <>
       <Navbar bg="light" data-bs-theme="light" sticky="top">
         <Container>
-          <Navbar.Brand href="/">Rabbit Hole Cafe</Navbar.Brand>
+          <Navbar.Brand href="/">Rabbit Hole Caf&eacute;</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="menu">Menu</Nav.Link>
