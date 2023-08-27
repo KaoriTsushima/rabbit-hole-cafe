@@ -40,8 +40,8 @@ export default function Menu() {
     <h1>Menu</h1>
 
     <Tab.Container defaultActiveKey="Coffee">
-      <div className="d-flex flex-column mx-4 mt-5 gap-5">
-        <Nav variant="pills" fill>
+      <div className="d-flex flex-column mx-5 mt-5 gap-5">
+        <Nav variant="pills" justify>
           <Nav.Item>
             <Nav.Link eventKey="Coffee">Coffee</Nav.Link>
           </Nav.Item>
