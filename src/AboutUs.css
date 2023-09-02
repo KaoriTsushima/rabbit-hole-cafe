@@ -5,7 +5,6 @@
 }
 .master-comment {
   text-align: left;
-  padding: 30px;
   font-family: "PT Mono", monospace;
   font-size: 16pt;
 }
@@ -14,11 +13,26 @@
   border-radius: 120px;
   margin-right: 20px;
 }
-.staff-comment {
-  text-align: right;
+
+.bubble-container {
+  display: flex;
+  align-items: center;
+  float: right;
+}
+.bubble {
+  border: 2px solid rgb(207, 102, 15);
+  padding: 2rem;
+  /* width: 25rem; */
+  border-radius: 10px;
   font-family: "PT Mono", monospace;
   font-size: 16pt;
-  color: rgb(207, 102, 15);
-  /* border: 1pt solid rgb(207, 102, 15);
-  border-radius: 10px; */
+}
+.pointer {
+  height: 2rem;
+  width: 2rem;
+  border-top: 2px solid rgb(207, 102, 15);
+  border-right: 2px solid rgb(207, 102, 15);
+  transform: translateX(-53%) rotate(45deg);
+  background-color: white;
+  z-index: 3;
 }
