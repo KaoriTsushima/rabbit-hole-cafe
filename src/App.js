@@ -4,6 +4,7 @@ import Home from "./Home";
 import Header from "./Header";
 import Menu from "./Menu";
 import AboutUs from "./AboutUs";
+import Login from "./Login";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </div>

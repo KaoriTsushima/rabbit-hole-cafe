@@ -13,6 +13,7 @@ export default function Header() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="menu">Menu</Nav.Link>
             <Nav.Link href="about-us">About us</Nav.Link>
+            <Nav.Link href="login">Log-in</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
