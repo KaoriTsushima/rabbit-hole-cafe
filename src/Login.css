@@ -1,5 +1,19 @@
-.reset-password {
+.container h3 {
   font-family: "PT Mono", monospace;
+}
+.login-container {
+  font-family: "PT Mono", monospace;
+  max-width: 600px;
+  display: block;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: antiquewhite;
+  border: 1pt solid black;
+  border-radius: 10px;
+}
+
+.reset-password,
+.create-account {
   color: blue;
-  text-align: left !important;
+  text-decoration: none;
 }

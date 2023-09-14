@@ -3,73 +3,46 @@ import "./Login.css";
 
 export default function Login() {
   return (
-    <div className="login-signUp-container">
-      <h1>Log in / Sign in</h1>
-      <div classNane="login-container">
-        <div className="row m-4">
-          <div className="col">
-            <h2>Log in</h2>
-            <form>
-              <div class="row mb-3">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">
-                  Email
-                </label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail3" />
-                </div>
-              </div>
-              <div class="row mb-3">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">
-                  Password
-                </label>
-                <div class="col-sm-10">
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="inputPassword3"
-                  />
-                </div>
-              </div>
+    <div className="container">
+      <h1>Log in</h1>
+      <h3>
+        If you do not have your account,{" "}
+        <a href="#" className="create-account">
+          Create account
+        </a>
+      </h3>
+      <div className="login-container">
+        <h2>User Log in</h2>
 
-              <button type="submit" class="btn btn-primary">
-                Log in
-              </button>
-            </form>
-            <a href="#" className="reset-password">
-              Forgot password?
-            </a>
+        <form>
+          <div className="row mb-3">
+            <label for="inputEmail3" className="col-sm-2 col-form-label">
+              Email
+            </label>
+            <div className="col-sm-10">
+              <input type="email" className="form-control" id="inputEmail3" />
+            </div>
+          </div>
+          <div className="row mb-3">
+            <label for="inputPassword3" className="col-sm-2 col-form-label">
+              Password
+            </label>
+            <div className="col-sm-10">
+              <input
+                type="password"
+                className="form-control"
+                id="inputPassword3"
+              />
+            </div>
           </div>
 
-          <div className="col">
-            <h2>Sign in</h2>
-            <form>
-              <div class="row mb-3">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">
-                  Email
-                </label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail3" />
-                </div>
-              </div>
-              <div class="row mb-3">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">
-                  Password
-                </label>
-                <div class="col-sm-10">
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="inputPassword3"
-                  />
-                </div>
-              </div>
-
-              <button type="submit" class="btn btn-primary">
-                Sign in
-              </button>
-            </form>
-          </div>
-        </div>
+          <button type="submit" className="btn btn-primary">
+            Log in
+          </button>
+        </form>
+        <a href="#" className="reset-password">
+          Forgot password?
+        </a>
       </div>
     </div>
   );
